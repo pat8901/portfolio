@@ -29,7 +29,7 @@ header {
 
 nav {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   align-items: center;
 }
@@ -55,7 +55,7 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 
   .logo {
@@ -69,7 +69,7 @@ nav a:first-of-type {
 
   nav {
     row-gap: 2.5rem;
-    text-align: left;
+    text-align: center;
     margin-left: -1rem;
     font-size: 1rem;
     padding: 1rem 0;

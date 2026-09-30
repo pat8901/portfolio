@@ -5,7 +5,12 @@
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.</p>
-        <img src="/images/cliff.JPG" />
+        <div class="resume-container">
+            <p> test</p>
+            <div class="resume">
+                <img src="/images/cliff.JPG" />
+            </div>
+        </div>
     </div>
 </template>
 
@@ -31,5 +36,18 @@ img {
     height: auto;
     object-fit: cover;
     justify-self: center;
+}
+
+.resume-container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.resume {
+    height: 100%;
+    overflow: auto;
+    min-height: 0;
 }
 </style>
