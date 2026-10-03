@@ -1,0 +1,76 @@
+{
+  "details": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "1234567890",
+    "linkedin": "NONE",
+    "github": "NONE",
+    "purpose": "To obtain a software engineering position where I can apply my skills in C++, JavaScript, and web development to create efficient and reliable software solutions."
+  },  
+  "education": {
+    "university": "Westbridge Technical College",
+    "degree": "B.S. in Software Engineering",
+    "gradDate": "Graduated May 2022"
+  },
+  "employment": [
+    {
+      "employer": "Asterion Systems",
+      "title": "Senior Software Engineer",
+      "startDate": "March 2024",
+      "endDate": "Present",
+      "responsibilities": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      ]
+    },
+    {
+      "employer": "Cedar Valley Research Lab",
+      "title": "Software Engineer",
+      "startDate": "July 2022",
+      "endDate": "February 2024",
+      "responsibilities": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      ]
+    },
+    {
+      "employer": "Pinebrook Technology Services",
+      "title": "IT Systems Assistant",
+      "startDate": "May 2020",
+      "endDate": "June 2022",
+      "responsibilities": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Operations Dashboard",
+      "keywords": "JavaScript, Vue, Express, CSS, HTML",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "title": "Sensor Telemetry Explorer",
+      "keywords": "C++, Python, JavaScript, SQL",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ],
+  "technologies": {
+    "languages": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "Frameworks": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    "Libraries": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+    "Tools": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
+    "Concepts": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  }
+}

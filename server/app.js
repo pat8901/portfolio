@@ -10,6 +10,7 @@ const allowedOrigins = [
 
 var usersRouter = require('./routes/users');
 var aptRouter = require('./routes/apt');
+var resumeRouter = require('./routes/resume');
 
 var app = express();
 
@@ -41,5 +42,6 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/users', usersRouter);
 app.use('/apt', aptRouter);
+app.use('/resume', resumeRouter);
 
 module.exports = app;

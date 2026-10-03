@@ -5,9 +5,9 @@ CWD=$(pwd)
 
 stop_server() {
     echo "Stopping server..."
-    killall "npm start"
+    kill -9 $(lsof -t -i:3000)
     echo "Stopping client..."
-    killall "npm run dev"
+    kill -9 $(lsof -t -i:5173)
 }
 
 stop_server
