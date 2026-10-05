@@ -2,9 +2,9 @@
 import { nextTick, onMounted, onUnmounted, ref } from 'vue'
 import ResumeEntry from '../components/ResumeEntry.vue'
 import ProjectEntry from '../components/ProjectEntry.vue'
-import { getResume } from '../api'
 import EducationEntry from '@/components/EducationEntry.vue'
 import TechEntry from '@/components/TechEntry.vue'
+import { getResume } from '../api'
 
 const resume = ref({});
 const isLoading = ref(true);
@@ -129,14 +129,16 @@ p {
     padding: 20px
 }
 
-img {
+/* TODO this is messing up my options im */
+
+/* img {
     padding: 20px;
     width: 100%;
     max-width: 1000px;
     height: auto;
     object-fit: cover;
     justify-self: center;
-}
+} */
 
 .name {
     display: flex;

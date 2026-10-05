@@ -1,5 +1,21 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { ref, onMounted } from 'vue';
+import SearchBar from '@/components/SearchBar.vue'
+import MiscOptions from '@/components/MiscOptions.vue'
+import { getResume } from './api'
+
+// Initialize as an empty object
+const resume = ref({});
+
+onMounted(async () => {
+  try {
+    // TODO: Make it so that only one api call is made to getResume() and the data is shared between HomeView and App.vue
+    resume.value = await getResume();
+  } catch (error) {
+    console.error("Failed to load link data:", error);
+  }
+});
 </script>
 
 <template>
@@ -7,9 +23,12 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
       </nav>
+      <SearchBar />
+      <MiscOptions v-if="resume?.details?.github" :githubUrl="resume.details.github"
+        :linkedinUrl="resume.details.linkedin" />
     </div>
   </header>
 
@@ -22,6 +41,13 @@ header {
   max-height: 100vh;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  /* padding: 1rem; */
+}
+
 .logo {
   display: block;
   margin: 0 auto 2rem;
@@ -29,8 +55,8 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: 100px 100px 100px;
+  /* gap: 1rem; */
   align-items: center;
 }
 
@@ -45,7 +71,6 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
 }
 
 nav a:first-of-type {
