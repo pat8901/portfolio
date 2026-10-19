@@ -32,12 +32,12 @@ app.use(cors({
 }));
 
 // Point Express to your Vue build output folder (usually 'dist')
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
 
-// Catch-all route to let Vue Router handle the page navigation
+//Catch-all route to let Vue Router handle the page navigation
 // app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'dist/index.html'));
+//   res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 // });
 
 app.use('/users', usersRouter);
