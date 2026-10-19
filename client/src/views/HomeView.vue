@@ -56,7 +56,7 @@ onUnmounted(() => {
     <div class="home">
 
         <div class="resume-container">
-            <nav>
+            <nav class="resume-nav-container">
                 <ul class="resume-nav">
                     <li><a href="#purpose" :class="{ active: activeSection === 'purpose' }">Purpose</a></li>
                     <li><a href="#education" :class="{ active: activeSection === 'education' }">Education</a></li>
@@ -162,6 +162,10 @@ p {
     /* border-radius: 50%;    */
 }
 
+.resume-nav-container {
+    background-color: #4c4c47;
+}
+
 .resume-nav {
     display: flex;
     flex-direction: column;
@@ -177,21 +181,23 @@ p {
 
 .resume-nav a {
     text-decoration: none;
-    color: #666;
-    font-size: 1.25rem;
+    color: #FFFFFF;
+    font-size: 1rem;
     transition: all 0.3s ease;
     padding-left: 0.5rem;
     border-left: 3px solid transparent;
 }
 
 .resume-nav a.active {
-    color: #3b82f6;
+    color: #36f1cd;
     font-weight: 600;
-    border-left-color: #3b82f6;
+    border-left-color: #36f1cd;
 }
 
 .resume-section {
     padding-bottom: 4rem;
+    color: #FFFFFF;
+    /* background-color: #4c4c47; */
 }
 
 .resume-section:last-of-type {
@@ -242,5 +248,6 @@ p {
     overflow: auto;
     scroll-behavior: smooth;
     padding-inline: 10rem;
+    background-color: #2D2D2A;
 }
 </style>

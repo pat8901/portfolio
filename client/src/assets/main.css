@@ -17,6 +17,7 @@ a,
   /* color: rgba(33, 192, 192, 0.909); */
   transition: 0.4s;
   padding: 3px;
+  font-weight: bold;
 }
 
 /* @media (hover: hover) {

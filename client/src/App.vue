@@ -46,6 +46,7 @@ header {
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   /* padding: 1rem; */
+  background-color: #ffffff;
 }
 
 .logo {
@@ -58,10 +59,11 @@ nav {
   grid-template-columns: 100px 100px 100px;
   /* gap: 1rem; */
   align-items: center;
+  color: #000000;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: #000000;
 }
 
 nav a.router-link-exact-active:hover {
@@ -96,7 +98,7 @@ nav a:first-of-type {
     row-gap: 2.5rem;
     text-align: center;
     margin-left: -1rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 1rem 0;
     margin-top: 1rem;
   }

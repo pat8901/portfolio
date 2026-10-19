@@ -37,6 +37,7 @@ defineProps({
 <style scoped>
 .resume-entry {
   padding: 1.25rem;
+  color: #FFFFFF;
 }
 
 .entry-header {
@@ -44,11 +45,12 @@ defineProps({
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  color: #FFFFFF;
 }
 
 h2,
 h3 {
-  color: var(--color-heading);
+  /* color: var(--color-heading); */
   line-height: 1.3;
 }
 
@@ -82,6 +84,7 @@ h3 {
   .entry-header {
     flex-direction: column;
     gap: 0.25rem;
+    color: #FFFFFF;
   }
 
   .entry-dates {
